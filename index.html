@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>EGA | Executive Growth Accelerator</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "vrt-red": "#E61C21",
+                        "vrt-black": "#000000",
+                        "vrt-gray": "#5F5F5F",
+                        "vrt-gray-light": "#606060",
+                        "primary": "#E61C21",
+                        "background-light": "#FEFEFE",
+                    },
+                    fontFamily: {
+                        "sans": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: { 
+                        "none": "0px",
+                        "sm": "2px",
+                        "DEFAULT": "0px", 
+                        "lg": "0px", 
+                        "xl": "4px", 
+                        "2xl": "8px", 
+                    },
+                    animation: {
+                      'scroll': 'scroll 40s linear infinite',
+                      'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                      scroll: {
+                        '0%': { transform: 'translateX(0)' },
+                        '100%': { transform: 'translateX(-50%)' },
+                      },
+                      fadeInUp: {
+                        '0%': { opacity: '0', transform: 'translateY(20px)' },
+                        '100%': { opacity: '1', transform: 'translateY(0)' },
+                      }
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        body { min-height: 100dvh; background-color: #FEFEFE; color: #000000; selection-background: #E61C21; selection-color: #ffffff; }
+        .glass-dark {
+          background: rgba(0, 0, 0, 0.95);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border: 1px solid rgba(230, 28, 33, 0.2);
+        }
+        .text-glow-red { text-shadow: 0 0 15px rgba(230, 28, 33, 0.4); }
+        .btn-hover-effect { position: relative; overflow: hidden; }
+        .btn-hover-effect::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255,255,255,0.1);
+            transform: translate(-50%, -50%) rotate(45deg) scale(0);
+            transition: transform 0.6s ease;
+        }
+        .btn-hover-effect:hover::after { transform: translate(-50%, -50%) rotate(45deg) scale(1); }
+        .bg-pattern {
+            background-image: radial-gradient(#E61C21 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.05;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-background-light font-sans antialiased overflow-x-hidden">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
