@@ -2,7 +2,7 @@
 import React from 'react';
 
 export const Hero: React.FC = () => {
-  const rajeshImg = "/NP__0163.jpg";
+  const rajeshImg = "/NP__0341.jpg";
 
   return (
     <div className="relative w-full bg-white pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden">
