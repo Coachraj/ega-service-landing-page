@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
             </div>
             
             <h1 className="font-serif text-vrt-black text-5xl md:text-7xl font-black leading-[1] tracking-tighter mb-10">
-              Scale your business <span className="text-vrt-red italic">faster</span>—by fixing the systems holding you back.
+              Scale your business <span className="text-vrt-red italic">faster</span>by fixing the systems holding you back.
             </h1>
             
             <p className="text-vrt-gray text-lg md:text-xl leading-relaxed mb-12 max-w-2xl font-medium">
