@@ -10,7 +10,7 @@ export const AboutRajesh: React.FC = () => {
           <div className="lg:col-span-5 relative">
             <div className="aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl border-l-4 border-vrt-red bg-vrt-gray/20">
               <img 
-                src="\NP__0163.jpg" 
+                src="\NP__0341.jpg" 
                 alt="Rajesh Tedla" 
                 className="w-full h-full object-cover object-center scale-100 hover:scale-105 transition-transform duration-700"
                 onError={(e) => {
