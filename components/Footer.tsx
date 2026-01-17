@@ -7,10 +7,11 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         <div className="col-span-1 lg:col-span-1">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-8 bg-vrt-red flex items-center justify-center text-white">
-              <span className="material-symbols-outlined text-xl">trending_up</span>
+            <div className="w-20 h-20  flex items-center justify-center text-white">
+              {/* <span className="material-symbols-outlined text-xl">trending_up</span> */}
+              <img src="/EGA Logo.png" alt="" />
             </div>
-            <span className="font-serif text-xl font-black">VRT</span>
+            <span className="font-serif text-xl font-black">Entrepreneur Growth Alliance</span>
           </div>
           <p className="text-xs text-slate-400 leading-relaxed uppercase tracking-widest font-bold">
             Architecting predictable growth for USA-based SMBs.

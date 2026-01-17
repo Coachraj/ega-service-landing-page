@@ -26,7 +26,7 @@ export const TrainingAreas: React.FC = () => {
             <div className="bg-white/5 border border-white/10 p-6 max-w-xs">
               <p className="text-[10px] font-black text-vrt-red uppercase tracking-widest mb-2">Notice</p>
               <p className="text-[11px] text-slate-300 font-bold uppercase tracking-wide">
-                Cohort capacity: 12 participants per group. Enrollment is high-touch.
+                Cohort capacity: 25 participants per group. Enrollment is high-touch.
               </p>
             </div>
           </div>

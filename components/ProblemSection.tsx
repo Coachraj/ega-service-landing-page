@@ -20,7 +20,7 @@ export const ProblemSection: React.FC = () => {
               The real reason most <br/><span className="text-vrt-red italic">businesses stall.</span>
             </h2>
             <p className="text-vrt-gray text-xl leading-relaxed mb-10">
-              Most businesses don’t get stuck because the owner lacks ambition. They stall because growth increases complexity—and the business lacks a process to handle it.
+              Most businesses don’t get stuck because the owner lacks ambition. They stall because growth increases complexity and the business lacks a process to handle it.
             </p>
           </div>
           <div className="lg:w-1/2 grid grid-cols-1 gap-4">

@@ -3,20 +3,43 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 
 const QUOTES = [
   {
+    text: "“I had the opportunity to work with Raj when he consulted Universal Hospital Services (UHS) on operational excellence. Raj helped us focus on the right things—culture and strategic alignment—beyond Lean Six Sigma tools. His ability to connect with executives and field workers alike makes him an exceptional coach. The impact of his help was invaluable.”",
+    author: "Mersea Kidan",
+    role: "Healthcare Operations Leader"
+  },
+  {
     text: "“The ability to ask powerful questions… transformed me as a leader. Rajesh's insights are surgical and effective.”",
     author: "Melissa Uribe Gil",
     role: "EVP, Costex Tractor Parts"
   },
   {
+    text: "“Raj is an outstanding executive coach, mentor, and strategic partner. His Lean Six Sigma Master Black Belt expertise combined with organizational effectiveness training creates the perfect link between people and processes. He is results-oriented with a laser focus on execution, builds trust quickly, and delivers insight that is spot on. It has been a pleasure working with him.”",
+    author: "Laura Brown",
+    role: "Senior Business Leader"
+  },
+
+  {
+    text: "“Raj taught me how to profile the 'WHY' behind our actions using data… goes beyond theories into real-world results.”",
+    author: "Lara Cattaneo",
+    role: "Clinical Psychologist"
+  },
+  {
+    text: "“Raj is a tremendous asset and contributor to any company that taps into his experience with human capital and principles of Lean Six Sigma. I was fortunate to have worked closely with Raj including my first ‘value stream mapping’ event and learned tremendously from his experience and practical application of his knowledge. An invaluable experience and time well spent with Raj for me and our OpEx team.”",
+    author: "Gary J. Kopczyk",
+    role: "Operational Excellence Leader"
+  },
+  {
+    text: "“From organizational analysis or transformation implementation to building an organic self-driving culture to support changes, Raj provides a significant advantage in successfully meeting business objectives. As a CLSSMBB, he mentored BBs and led a companywide Lean Six Sigma transformation across 83 sites nationwide. The project exceeded expectations, creating a clear shift in culture and buy-in. I highly recommend Raj as a ‘go-to’ business partner and mentor.”",
+    author: "Oscar Martinez",
+    role: "Lean Six Sigma Executive"
+  },
+
+  {
     text: "“Our business grew by 130%… leadership team is aligned… clarity and vision like never before. The EGA process is a game changer.”",
     author: "Francesco Pagano",
     role: "President, Interpreters and Translators, Inc."
-  },
-  {
-    text: "“Raj taught me how to profile the ‘WHY’ behind our actions using data… goes beyond theories into real-world results.”",
-    author: "Lara Cattaneo",
-    role: "Clinical Psychologist"
   }
+
 ];
 
 export const Testimonials: React.FC = () => {
@@ -151,7 +174,7 @@ export const Testimonials: React.FC = () => {
               </div>
             </div>
             
-            <div className="flex items-center gap-12 pt-4">
+            {/* <div className="flex items-center gap-12 pt-4">
               <div className="flex flex-col items-center">
                 <span className="text-[10px] font-black text-vrt-gray-light tracking-widest uppercase mb-1">Current</span>
                 <span className="text-3xl font-serif font-black text-vrt-red">{String(currentIndex + 1).padStart(2, '0')}</span>
@@ -161,17 +184,17 @@ export const Testimonials: React.FC = () => {
                 <span className="text-[10px] font-black text-vrt-gray-light tracking-widest uppercase mb-1">Total</span>
                 <span className="text-3xl font-serif font-black text-vrt-black">{String(QUOTES.length).padStart(2, '0')}</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
-
+{/* 
         <div className="mt-24 text-center">
            <p className="text-vrt-gray-light text-[11px] font-bold uppercase tracking-[0.2em] mb-10">Real Stories. Real Metrics. Real Growth.</p>
            <button className="bg-vrt-black text-white px-12 py-6 text-sm font-black uppercase tracking-[0.2em] hover:bg-vrt-red transition-all btn-hover-effect flex items-center gap-4 mx-auto">
              View Success Case Studies
              <span className="material-symbols-outlined">analytics</span>
            </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

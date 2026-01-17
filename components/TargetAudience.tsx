@@ -25,7 +25,7 @@ export const TargetAudience: React.FC = () => {
         </div>
         <div className="bg-vrt-black text-white p-8 text-center border-t-4 border-vrt-red">
           <p className="text-lg font-medium">
-            If this is you, the <span className="text-vrt-red font-black underline">February 2026 cohort</span> is your next execution window.
+            If this is you, the <span className="text-vrt-red font-black underline">March 19th 2026 cohort</span> is your next execution window.
           </p>
         </div>
       </div>

@@ -11,7 +11,7 @@ export const PositioningHeadline: React.FC = () => {
           </h2>
           <div className="w-20 h-1 bg-vrt-red mb-8"></div>
           <p className="text-vrt-gray text-xl leading-relaxed mb-10">
-            Growth As A Process is the core of EGA™: when you install the right process, growth becomes repeatable—not dependent on heroic effort, luck, or the CEO doing everything.
+            Growth As A Process is the core of EGA™: when you install the right process, growth becomes repeatable, not dependent on heroic effort, luck, or the CEO doing everything.
           </p>
         </div>
         <div className="bg-slate-50 p-10 border-l-4 border-vrt-black space-y-6">

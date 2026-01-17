@@ -4,19 +4,19 @@ import React from 'react';
 const FAQS = [
   {
     q: 'Is the strategy call really complementary?',
-    a: 'Yes. It’s a working session designed to deliver clarity and next steps.'
+    a: "Yes. It's a working session designed to deliver clarity and next steps."
   },
   {
-    q: 'What if I’m not sure what the real problem is?',
-    a: 'That’s exactly what we diagnose—then we prioritize what matters most.'
+    q: 'What if I am not sure what the real problem is?',
+    a: 'Tha is s exactly what we diagnose then we prioritize what matters most.'
   },
   {
     q: 'Do you work with any industry?',
-    a: 'VRT is focused on USA-based SMBs and entrepreneurs. If you’re scaling complexity—people, operations, execution—this applies.'
+    a: 'VRT is focused on USA based SMBs and entrepreneurs. If you are scaling complexity is people, operations, execution, this applies.'
   },
   {
-    q: 'Will you give me a plan even if I don’t join EGA™?',
-    a: 'You’ll leave the call with clearer priorities and next actions either way.'
+    q: 'Will you give me a plan even if I do not join EGA™?',
+    a: 'You will leave the call with clearer priorities and next actions either way.'
   }
 ];
 

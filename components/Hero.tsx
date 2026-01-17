@@ -12,11 +12,11 @@ export const Hero: React.FC = () => {
           <div className="lg:col-span-7 animate-fade-in-up">
             <div className="inline-flex items-center gap-3 bg-vrt-red text-white px-4 py-1.5 mb-10 text-[10px] font-black uppercase tracking-[0.3em]">
               <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-              The February 2026 cohort begins soon
+              The March 2026 cohort begins soon
             </div>
             
             <h1 className="font-serif text-vrt-black text-5xl md:text-7xl font-black leading-[1] tracking-tighter mb-10">
-              Scale your business <span className="text-vrt-red italic">faster</span>by fixing the systems holding you back.
+              Scale your business <span className="text-vrt-red italic">faster</span> by fixing the systems holding you back.
             </h1>
             
             <p className="text-vrt-gray text-lg md:text-xl leading-relaxed mb-12 max-w-2xl font-medium">
@@ -24,10 +24,12 @@ export const Hero: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+            <a href="https://calendly.com/rajeshtedla/growth-advisory-call-with-rajesh-tedla-clone-1?month=2026-01">
               <button className="bg-vrt-red hover:bg-vrt-black transition-all text-white px-10 py-5 text-sm font-black uppercase tracking-[0.2em] flex items-center justify-center gap-3 group btn-hover-effect">
                 Book My 45-Min Strategy Call
                 <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
               </button>
+              </a>
               <div className="text-left">
                  <p className="text-[11px] text-vrt-gray-light uppercase tracking-[0.1em] font-black">No hype. No pressure. Just clarity.</p>
                  <div className="flex items-center gap-1 text-vrt-red mt-1">
@@ -60,7 +62,7 @@ export const Hero: React.FC = () => {
                  </div>
                  <div className="flex justify-between items-center pb-4 border-b border-white/10">
                     <span className="text-xs font-bold text-slate-400">AVAILABILITY</span>
-                    <span className="text-sm font-black text-vrt-red">3 SLOTS LEFT THIS WEEK</span>
+                    <span className="text-sm font-black text-vrt-red">LIMITED SLOTS LEFT</span>
                  </div>
                </div>
                <p className="text-xs text-slate-300 italic mb-8 leading-relaxed">

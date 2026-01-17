@@ -58,7 +58,7 @@ const App: React.FC = () => {
         <FinalCTA />
       </main>
       <Footer />
-      <AIGrowthAssistant />
+      {/* <AIGrowthAssistant /> */}
     </div>
   );
 };

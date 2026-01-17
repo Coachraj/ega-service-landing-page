@@ -21,7 +21,7 @@ export const Features: React.FC = () => {
             </h2>
             <div className="w-24 h-2 bg-vrt-red mb-10"></div>
             <p className="text-slate-400 text-lg mb-12">
-              We skip the fluff and dive straight into the mechanics of your business. No sales pitch—just strategy.
+              We skip the fluff and dive straight into the mechanics of your business.
             </p>
             <button className="bg-vrt-red text-white px-10 py-5 text-sm font-black uppercase tracking-[0.2em] hover:bg-white hover:text-vrt-black transition-all btn-hover-effect">
               Book Strategy Call
