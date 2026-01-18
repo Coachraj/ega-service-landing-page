@@ -13,7 +13,7 @@ export const StickyAlert = () => {
             <span className="material-symbols-outlined text-lg">
               priority_high
             </span>
-            March 2026 Cohort: Limited Capacity
+            March 19th, 2026 Cohort: Limited Capacity
           </span>
 
           <button

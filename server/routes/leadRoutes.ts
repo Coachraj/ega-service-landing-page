@@ -9,21 +9,21 @@ router.post("/leads", async (req, res) => {
     // 1. Save lead in MongoDB
     const lead = await Lead.create(req.body);
 
-    // 2. Send lead to n8n webhook
-    await axios.post(
-      "https://vrtgroup.app.n8n.cloud/webhook/06a19216-a1a5-48b8-8e2f-c3036cc51719",
-      {
-        lead_id: lead._id,
-        name: lead.name,
-        email: lead.email,
-        companyName: lead.companyName,
-        employees: lead.employees,
-        revenue: lead.revenue,
-        website: lead.website,
-        status: lead.status,
-        createdAt: lead.createdAt,
-      }
-    );
+    // // 2. Send lead to n8n webhook
+    // await axios.post(
+    //   "https://vrtgroup.app.n8n.cloud/webhook/06a19216-a1a5-48b8-8e2f-c3036cc51719",
+    //   {
+    //     lead_id: lead._id,
+    //     name: lead.name,
+    //     email: lead.email,
+    //     companyName: lead.companyName,
+    //     employees: lead.employees,
+    //     revenue: lead.revenue,
+    //     website: lead.website,
+    //     status: lead.status,
+    //     createdAt: lead.createdAt,
+    //   }
+    // );
 
     // 3. Respond to frontend
     res.status(201).json(lead);

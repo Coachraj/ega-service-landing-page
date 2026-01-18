@@ -53,12 +53,12 @@ export default function LeadForm() {
       });
 
       if (!res.ok) {
-        throw new Error("Failed to submit lead");
+        throw new Error("Failed to submit");
       }
 
       await res.json();
 
-      alert("Lead submitted successfully!");
+      alert("submitted successfully!");
 
       // ✅ reset form
       setForm({
