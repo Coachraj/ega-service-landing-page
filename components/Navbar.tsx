@@ -1,11 +1,16 @@
-
+import { useState } from "react";
 import React from 'react';
+import LeadForm from "./LeadForm";
+import type { ChangeEvent, FormEvent } from "react";
+
 
 export const Navbar: React.FC = () => {
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const [showForm, setShowForm] = useState(false);
 
   return (
     <nav className="bg-white border-b border-slate-100 py-6">
@@ -25,13 +30,27 @@ export const Navbar: React.FC = () => {
           >
             What’s Included
           </button>
-          <a href="https://calendly.com/rajeshtedla/growth-advisory-call-with-rajesh-tedla-clone-1?month=2026-01">
-          <button className="bg-vrt-red text-white px-6 py-3 text-[11px] font-black uppercase tracking-[0.2em] hover:bg-vrt-black transition-all">
+          <button className="bg-vrt-red text-white px-6 py-3 text-[11px] font-black uppercase tracking-[0.2em] hover:bg-vrt-black transition-all"
+          onClick={() => setShowForm(true)}>
             Book Strategy Call
           </button>
-          </a>
         </div>
       </div>
+
+      {showForm && (
+        <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center">
+          <div className="relative">
+            <button
+              className="absolute -top-4 -right-4 bg-white text-black rounded-full px-3 py-1"
+              onClick={() => setShowForm(false)}
+            >
+              ✕
+            </button>
+
+            <LeadForm />
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

@@ -1,8 +1,13 @@
-
+import { useState } from "react";
 import React from 'react';
+import LeadForm from "./LeadForm";
+import type { ChangeEvent, FormEvent } from "react";
 
 export const Hero: React.FC = () => {
   const rajeshImg = "/NP__0341.jpg";
+  const rajeshImg2 = "/NP__0163.jpg";
+  const rajeshImg3 = "/Raj_Tedla.jpg";
+  const [showForm, setShowForm] = useState(false);
 
   return (
     <div className="relative w-full bg-white pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden">
@@ -24,12 +29,11 @@ export const Hero: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
-            <a href="https://calendly.com/rajeshtedla/growth-advisory-call-with-rajesh-tedla-clone-1?month=2026-01">
-              <button className="bg-vrt-red hover:bg-vrt-black transition-all text-white px-10 py-5 text-sm font-black uppercase tracking-[0.2em] flex items-center justify-center gap-3 group btn-hover-effect">
+              <button className="bg-vrt-red hover:bg-vrt-black transition-all text-white px-10 py-5 text-sm font-black uppercase tracking-[0.2em] flex items-center justify-center gap-3 group btn-hover-effect"
+              onClick={() => setShowForm(true)}>
                 Book My 45-Min Strategy Call
                 <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
               </button>
-              </a>
               <div className="text-left">
                  <p className="text-[11px] text-vrt-gray-light uppercase tracking-[0.1em] font-black">No hype. No pressure. Just clarity.</p>
                  <div className="flex items-center gap-1 text-vrt-red mt-1">
@@ -40,14 +44,29 @@ export const Hero: React.FC = () => {
             </div>
           </div>
 
+          {showForm && (
+        <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center">
+          <div className="relative">
+            <button
+              className="absolute -top-4 -right-4 bg-white text-black rounded-full px-3 py-1"
+              onClick={() => setShowForm(false)}
+            >
+              ✕
+            </button>
+
+            <LeadForm />
+          </div>
+        </div>
+      )}
+
           <div className="lg:col-span-5 relative lg:mt-12">
             <div className="bg-vrt-black p-8 text-white relative z-10 shadow-2xl border-t-4 border-vrt-red">
                <div className="flex items-center gap-4 mb-8">
                  <div className="w-12 h-12 bg-vrt-red flex items-center justify-center overflow-hidden">
                     <img 
-                      src={rajeshImg} 
+                      src={rajeshImg3} 
                       alt="Rajesh Tedla" 
-                      className="w-full h-full object-cover grayscale"
+                      className="w-full h-full object-cover"
                     />
                  </div>
                  <div>
@@ -71,7 +90,7 @@ export const Hero: React.FC = () => {
                <div className="flex items-center gap-4 py-4 bg-white/5 px-4 rounded-sm">
                   <div className="w-10 h-10 rounded-full border-2 border-vrt-red bg-vrt-gray overflow-hidden">
                     <img 
-                      src={rajeshImg} 
+                      src={rajeshImg2} 
                       alt="Rajesh Tedla" 
                       className="w-full h-full object-cover"
                     />

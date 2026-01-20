@@ -32,7 +32,7 @@ export const AboutRajesh: React.FC = () => {
             <p className="text-vrt-red font-black uppercase tracking-[0.4em] text-[14px]">Founder & CEO, VRT Management Group LLC</p>
             <p className="text-vrt-red font-black uppercase tracking-[0.4em] text-[11px]">A Trusted Expert with Proven Success</p>
             <div className="space-y-6 text-slate-300 text-lg leading-relaxed max-w-2xl">
-            <span className="text-white font-bold">chaotic activity</span>
+           
               <p>
               With over 39 years of experience in business transformation, Rajesh Tedla is a globally recognized leader in coaching entrepreneurs to 
               achieve exponential growth. Rajesh has helped over <span className="text-white font-bold">1420+ entrepreneurs</span> scale their businesses, transform their leadership skills, and

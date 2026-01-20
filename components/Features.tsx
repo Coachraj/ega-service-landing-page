@@ -1,5 +1,7 @@
-
+import { useState } from "react";
 import React from 'react';
+import LeadForm from "./LeadForm";
+import type { ChangeEvent, FormEvent } from "react";
 
 const VALUE_POINTS = [
   { text: 'Quick diagnosis of where you’re stuck', tag: 'DIAGNOSTIC' },
@@ -9,7 +11,10 @@ const VALUE_POINTS = [
   { text: 'Determine if EGA™ is the right fit', tag: 'OUTCOME' }
 ];
 
+
+
 export const Features: React.FC = () => {
+  const [showForm, setShowForm] = useState(false);
   return (
     <div className="py-24 bg-vrt-black text-white relative overflow-hidden" id="what-you-get">
       <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent opacity-10"></div>
@@ -23,7 +28,8 @@ export const Features: React.FC = () => {
             <p className="text-slate-400 text-lg mb-12">
               We skip the fluff and dive straight into the mechanics of your business.
             </p>
-            <button className="bg-vrt-red text-white px-10 py-5 text-sm font-black uppercase tracking-[0.2em] hover:bg-white hover:text-vrt-black transition-all btn-hover-effect">
+            <button className="bg-vrt-red text-white px-10 py-5 text-sm font-black uppercase tracking-[0.2em] hover:bg-white hover:text-vrt-black transition-all btn-hover-effect"
+            onClick={() => setShowForm(true)}>
               Book Strategy Call
             </button>
           </div>
@@ -37,6 +43,20 @@ export const Features: React.FC = () => {
           </div>
         </div>
       </div>
+      {showForm && (
+        <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center">
+          <div className="relative">
+            <button
+              className="absolute -top-4 -right-4 bg-white text-black rounded-full px-3 py-1"
+              onClick={() => setShowForm(false)}
+            >
+              ✕
+            </button>
+
+            <LeadForm />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
